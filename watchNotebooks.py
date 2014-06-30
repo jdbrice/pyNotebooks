@@ -16,7 +16,7 @@ hostDir = "/home/daniel/pyNotebooks/html/"
 
 
 # Add any directories here that you want to excludde from the notebook hosting location
-excludeList = [ '^/home/daniel/pyNotebooks/notebooks/.git', '^/home/daniel/pyNotebooks/notebooks/private' ]
+excludeList = [ '^' + watchDir + '.git', '^' + watchDir + 'private' ]
 privateDirs =[]
 for path in excludeList :
 	parts = str.split( path, '/' )
